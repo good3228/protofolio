@@ -38,11 +38,11 @@ const Work = () => {
   return (
     <>
       <h2 className="head-text">
-        My Creative <span>Protofolio </span>Section
+        My Creative <span>Projects </span>Section
       </h2>
 
       <div className="app__work-filter">
-        {["All", "Web App", "Full-Stack", "Front-end", "Java", "React JS", ].map(
+        {["Web App", "Full-Stack", "Front-end", "Java", "React JS", "All"].map(
           (item, index) => (
             <div
               key={index}
@@ -75,7 +75,7 @@ const Work = () => {
                 }}
                 className="app__work-hover app__flex"
               >
-                { work.projectLink && 
+                {work.projectLink && (
                   <a href={work.projectLink} target="_blank" rel="noreferrer">
                     <motion.div
                       whileInView={{ scale: [0, 1] }}
@@ -87,7 +87,8 @@ const Work = () => {
                     >
                       <AiFillEye></AiFillEye>
                     </motion.div>
-                  </a>}
+                  </a>
+                )}
 
                 <a href={work.codeLink} target="_blank" rel="noreferrer">
                   <motion.div

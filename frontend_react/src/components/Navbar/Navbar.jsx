@@ -11,9 +11,9 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <a href="#home" style={{cursor:"pointer"}}>
+        {/* <a href="#home" style={{cursor:"pointer"}}> */}
           <img src={images.logo} alt="logo"></img>
-        </a>
+        {/* </a> */}
       </div>
       <ul className="app__navbar-links">
         {["home", "about", "work", "skills", "contact"].map((item) => (

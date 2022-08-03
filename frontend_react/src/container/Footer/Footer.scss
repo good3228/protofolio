@@ -22,9 +22,13 @@
       padding: 1rem;
       border-radius: 10px;
       cursor: pointer;
-      background-color: #fef4f5;
+      background-color: rgb(252, 250, 250);
 
       transition: all 0.3 ease-in-out;
+
+      &:hover {
+        box-shadow: 0 0 10px #e2dbdc;
+      }
     }
 
     img {
@@ -43,7 +47,7 @@
     }
 
     &:hover {
-      box-shadow: 0 0 25px #fef4f5;
+      box-shadow: 0 0 15px #eeeeee;
     }
 
     @media screen and (max-width: 450px) {
@@ -57,7 +61,7 @@
 }
 
 .app__footer-cards .app__footer-card:last-child {
-  background-color: #f2f7fb;
+  background-color: #f9f9f9;
 }
 
 .app__footer-form {
@@ -71,7 +75,7 @@
     margin: 0.75rem 0;
     border-radius: 10px;
     cursor: pointer;
-    background-color: var(--primary-color);
+    background-color: var(--white-color);
 
     transition: all 0.3s ease-in-out;
 
@@ -82,7 +86,7 @@
       border: none;
       border-radius: 7px;
 
-      background-color: var(--primary-color);
+      background-color: var(--white-color);
 
       font-family: var(--font-base);
       color: var(--secondary-color);
@@ -92,26 +96,29 @@
     textarea {
       height: 170px;
       &:hover {
-        box-shadow: 0 0 25px var(--primary-color);
+        box-shadow: 0 0 25px var(--white-color);
       }
     }
   }
 
-  button{
+  button {
     padding: 1rem 2rem;
     border-radius: 10px;
     border: none;
     background-color: var(--secondary-color);
-    
+
     font-weight: 500;
     color: var(--white-color);
     outline: none;
     margin: 2rem 0 0 0;
     font-family: vat(--font-base);
     cursor: pointer;
+    &:hover {
+      background-color: rgb(21, 21, 165);
+    }
   }
 
-  @media screen and (max-width:768px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
     margin: 1rem 0;
   }
